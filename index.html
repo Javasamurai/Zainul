@@ -149,14 +149,18 @@
 															alt="" />
 												</li>
 												<li class="splide__slide">
+													<a class="image">
 													<img
 															src="https://play-lh.googleusercontent.com/KHD_kNfuGYhJP7EUVI1RaqICUCAUi5JU_TVXLlMakkimc7fgpG5jp3hTbJ9Ir-ko0g=s180-rw"
 															alt="" />
+													</a>
 												</li>
 												<li class="splide__slide">
+													<a class="image">
 													<img
 															src="https://play-lh.googleusercontent.com/KNvgGGpogRu2GNAd14h_mAQb5AN9MA0AyP-1QnjbypT_QMX30r01ToTwt0IvihnncWI=s180-rw"
 															alt="" />
+													</a>
 												</li>
 											</ul>
 										</div>
@@ -489,31 +493,19 @@
 				new Splide(elm, {
 					type: 'loop',
 					perPage: 1,
+					heightRatio: 0.75,
+					direction  : 'ttb',
 					trimSpace: true,
+					drag: false,
+					width: '70%',
+					// autoHeight: true,
 					perMove: 1,
 					padding: {
-						left: 100,
-						right: 100,
+						top: 100
 					},
-					interval: 1000,
-					// autoplay: true,
 					rewind: true
 				}).mount();
 			}
-			// for (var i = 0, len = elms.length; i < len; i++) {
-			// 	new Splide(elms[i], {
-			// 		type: 'slide',
-			// 		perPage: 1,
-			// 		perMove: 1,
-			// 		padding: {
-			// 			left: 0,
-			// 			right: 0,
-			// 		},
-			// 		interval: 1000,
-			// 		autoplay: true,
-			// 		rewind: true
-			// 	}).mount();
-			// }
 		});
 		window.dataLayer = window.dataLayer || [];
 
