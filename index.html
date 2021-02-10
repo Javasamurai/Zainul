@@ -118,20 +118,8 @@
 							</header>
 							<div class="col-12">
 								<section class="box">
-									<div class="splide">
-										<div class="splide__track">
-											<ul class="splide__list">
-												<li class="splide__slide">
-													<img src="https://tinker.ly/wp-content/uploads/2019/08/Side.png"
-														alt="" />
-												</li>
-												<li class="splide__slide">
-													<img src="https://tinker.ly/wp-content/uploads/2019/08/Side.png"
-														alt="" />
-												</li>
-											</ul>
-										</div>
-									</div>
+									<img src="https://tinker.ly/wp-content/uploads/2019/08/Side.png"
+										alt="" />
 									<header>
 										<h3>Tinkerly (Formerly srJna)</h3>
 										<p>Jaipur</p>
@@ -499,12 +487,13 @@
 
 			for(var elm of elms) {
 				new Splide(elm, {
-					type: 'slide',
+					type: 'loop',
 					perPage: 1,
+					trimSpace: true,
 					perMove: 1,
 					padding: {
-						left: 0,
-						right: 0,
+						left: 100,
+						right: 100,
 					},
 					interval: 1000,
 					// autoplay: true,
