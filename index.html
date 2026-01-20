@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game Developer Portfolio">
+    <title>Game Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Oswald and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Patrick+Hand&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>Syed Zainul Abedin</h1>
+            <img src="avatar.png" alt="Syed Zainul Abedin" class="avatar">
+            <p class="subtitle">Senior Game Developer | Javasamurai</p>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/syed-zainul-abedin-409b1426/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Javasamurai" target="_blank">GitHub</a>
+                <a href="https://javasamurai.itch.io/" target="_blank">Itch.io</a>
+                <a href="mailto:szsimplesyed93@gmail.com">Email</a>
+            </div>
+        </header>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <div class="experience-item">
+                <h3 class="role-title">Senior Game Developer</h3>
+                <p class="company-name">Terra (Bangalore)</p>
+                <span class="date">Dec 2024 - Present</span>
+                <p>Working on release cycles and critical bug resolution. Created Unity Editor tools to streamline
+                    workflow and implemented hot content update solutions.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="role-title">Senior Game Developer</h3>
+                <p class="company-name">Creative Monkey Games (Bangalore)</p>
+                <span class="date">Feb 2024 - Dec 2024</span>
+                <p>Led gameplay development for <b>WCB2</b> and <b>Cricket Gangsta</b>. Improved retention by 25%
+                    through
+                    optimization and refactoring.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="role-title">Lead Game Developer</h3>
+                <p class="company-name">Sparrow Interactive (Remote)</p>
+                <span class="date">Nov 2022 - Nov 2024</span>
+                <p>Architected gameplay, UI, and networking systems. Conducted code reviews and established best
+                    practices.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="role-title">Game Developer</h3>
+                <p class="company-name">Supergaming (Pune)</p>
+                <span class="date">Feb 2019 - Oct 2022</span>
+                <p>Developed FPS games (**Maskgun**, **Indus Battle Royale**). Implemented Photon networking, analytics,
+                    and server-side AI bots.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="role-title">Game Developer</h3>
+                <p class="company-name">Hashcube (Bangalore)</p>
+                <span class="date">Apr 2017 - Feb 2019</span>
+                <p>Implemented features for Mahjong and Facebook Instant Games. Enhanced quest frameworks and automated
+                    sales tools.</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role-title">Software Developer</h3>
+                <p class="company-name">srJna(Tinkerly, Jaipur)</p>
+                <span class="date">Apr 2017 - Feb 2019</span>
+                <p>Developed Unity physics-based simulations for Tech-Ed platform
+                    Built and maintained assessment tools with online testing and result publishing using React web</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="slider-container" id="maskgun-indus-slider">
+                        <div class="slides">
+                            <img src="maskgun.png" alt="Maskgun" class="slide active">
+                            <img src="indus.png" alt="Indus Battle Royale" class="slide">
+                        </div>
+                        <button class="slider-btn prev"
+                            onclick="changeSlide('maskgun-indus-slider', -1)">&#10094;</button>
+                        <button class="slider-btn next"
+                            onclick="changeSlide('maskgun-indus-slider', 1)">&#10095;</button>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Maskgun & Indus BR</h3>
+                        <p class="project-desc">Real-time FPS multiplayer games. Implemented Photon networking and
+                            analytics for millions of users.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="cricket_gangsta.png" alt="Cricket Gangsta" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Cricket Gangsta</h3>
+                        <p class="project-desc">Led gameplay features and optimization, improving player retention by
+                            25%.</p>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">Unity Tools</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Terra Editor Tools</h3>
+                        <p class="project-desc">Custom Unity editor tools and hot content update systems to streamline
+                            development workflows.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Syed Zainul Abedin. Handcrafted with Code.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
