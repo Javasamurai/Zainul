@@ -31,6 +31,33 @@
             </div>
         </header>
 
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-note programming">
+                    <div class="pin"></div>
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>Bash</li>
+                    </ul>
+                </div>
+                <div class="skill-note engines">
+                    <div class="pin"></div>
+                    <h3>Game Engines</h3>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Godot</li>
+                        <li>Libgdx</li>
+                        <li>SDL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- Experience Section -->
         <section id="experience">
             <h2>Experience</h2>
@@ -64,7 +91,8 @@
                 <h3 class="role-title">Game Developer</h3>
                 <p class="company-name">Supergaming (Pune)</p>
                 <span class="date">Feb 2019 - Oct 2022</span>
-                <p>Developed FPS games (**Maskgun**, **Indus Battle Royale**). Implemented Photon networking, analytics,
+                <p>Developed FPS games <b>Maskgun</b>, <b>Indus Battle Royale</b>. Implemented Photon networking,
+                    analytics,
                     and server-side AI bots.</p>
             </div>
 
@@ -85,10 +113,10 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="professional-projects">
+            <h2>Professional Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Maskgun & Indus -->
                 <article class="project-card">
                     <div class="slider-container" id="maskgun-indus-slider">
                         <div class="slides">
@@ -104,21 +132,34 @@
                         <h3 class="project-title">Maskgun & Indus BR</h3>
                         <p class="project-desc">Real-time FPS multiplayer games. Implemented Photon networking and
                             analytics for millions of users.</p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.supergaming.maskgun"
+                                target="_blank">Maskgun</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.supergaming.indus"
+                                target="_blank">Indus BR</a>
+                        </div>
                     </div>
                 </article>
 
+                <!-- Cricket Gangsta -->
                 <article class="project-card">
                     <img src="cricket_gangsta.png" alt="Cricket Gangsta" class="project-image">
                     <div class="project-content">
                         <h3 class="project-title">Cricket Gangsta</h3>
                         <p class="project-desc">Led gameplay features and optimization, improving player retention by
                             25%.</p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.creativemonkeygames.cricketgangsta"
+                                target="_blank">Play Store</a>
+                        </div>
                     </div>
                 </article>
 
-                <!-- Project 3 -->
+                <!-- Terra Tools -->
                 <article class="project-card">
-                    <div class="project-image">Unity Tools</div>
+                    <div class="project-image"
+                        style="display: flex; align-items: center; justify-content: center; background: #eee; font-family: var(--font-heading);">
+                        Unity Tools</div>
                     <div class="project-content">
                         <h3 class="project-title">Terra Editor Tools</h3>
                         <p class="project-desc">Custom Unity editor tools and hot content update systems to streamline
@@ -128,9 +169,96 @@
             </div>
         </section>
 
+        <!-- Personal Projects Section -->
+        <section id="personal-projects">
+            <h2>Personal Projects</h2>
+            <div class="projects-grid">
+                <!-- Project: Paintball -->
+                <article class="project-card">
+                    <img src="paintball.png" alt="Paintball" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Paintball</h3>
+                        <p class="project-desc">An action-packed paintball simulation game with fast-paced gameplay.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Javasamurai/PaintBall" target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1qPdWHaC3yaFdWaE6YDytgVWsFCOq0SIj/view?usp=sharing"
+                                target="_blank">Download APK</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Lone Warrior -->
+                <article class="project-card">
+                    <img src="lone_warrior.png" alt="Lone Warrior" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Lone Warrior</h3>
+                        <p class="project-desc">A dark, atmospheric adventure game. Developed with Unity.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Javasamurai/LoneWarriorBuild" target="_blank">GitHub</a>
+                            <a href="https://javasamurai.github.io/LoneWarriorBuild/" target="_blank">Play WebGL</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Rock Paper Scissors Lizard Wizard -->
+                <article class="project-card">
+                    <img src="rps_lizard_wizard.png" alt="Rock Paper Scissors Lizard Wizard" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">RPS Lizard Wizard</h3>
+                        <p class="project-desc">A turn-based 2-player game based on the expanded classic rules.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Javasamurai/Rock-Paper-Scissor-Lizard-Wizard"
+                                target="_blank">GitHub</a>
+                            <a href="https://drive.google.com/file/d/1bPMTPpEgCa_DJj2WLpDImx_YW1K-Jv44/view?usp=sharing"
+                                target="_blank">Download APK</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Game Design Toolbox -->
+                <article class="project-card">
+                    <img src="game_design_toolbox.png" alt="Game Design Toolbox" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Game Design Toolbox</h3>
+                        <p class="project-desc">A collection of ScriptableObject-based tools for rapid game prototyping
+                            in Unity.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Javasamurai/GameDesignToolBox" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Flat Adventures -->
+                <article class="project-card">
+                    <img src="flat_adventures.png" alt="Flat Adventures" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Flat Adventures</h3>
+                        <p class="project-desc">A hybrid 2D/3D adventure game created for GitHub Game Off 2018.</p>
+                        <div class="project-links">
+                            <a href="https://ramiz-balayil.itch.io/flat-adventures" target="_blank">Itch.io</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project: Krate Chase -->
+                <article class="project-card">
+                    <img src="krate chase.png" alt="Krate Chase" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Krate Chase</h3>
+                        <p class="project-desc">An action-platformer where you collect crates and acquire weapons to
+                            defeat enemies.</p>
+                        <div class="project-links">
+                            <a href="https://javasamurai.itch.io/krate-chase" target="_blank">Itch.io</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer>
-            <p>&copy; 2026 Syed Zainul Abedin. Handcrafted with Code.</p>
+            <p>&copy; 2026 Syed Zainul Abedin. Handcrafted idea and prompt by Syed Zainul Abedin. Magically generated by
+                Antigravity.</p>
         </footer>
     </div>
     <script src="script.js"></script>
