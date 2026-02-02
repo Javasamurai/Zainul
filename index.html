@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Game Developer Portfolio">
-    <title>Game Developer Portfolio</title>
+    <meta name="description" content="Zain Portfolio">
+    <title>Zain Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts: Oswald and Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,11 +37,12 @@
             <div class="skills-grid">
                 <div class="skill-note programming">
                     <div class="pin"></div>
-                    <h3>Programming Languages</h3>
+                    <h3>Programming Languages/Tools</h3>
                     <ul>
                         <li>C++</li>
                         <li>C#</li>
                         <li>Java</li>
+                        <li>Git CLI</li>
                         <li>Bash</li>
                     </ul>
                 </div>
@@ -83,8 +84,8 @@
                 <h3 class="role-title">Lead Game Developer</h3>
                 <p class="company-name">Sparrow Interactive (Remote)</p>
                 <span class="date">Nov 2022 - Nov 2024</span>
-                <p>Architected gameplay, UI, and networking systems. Conducted code reviews and established best
-                    practices.</p>
+                <p>Architected gameplay, UI, and networking systems for <b>Darklin Wars</b> and <b>Bug Frenzy</b>.
+                    Conducted code reviews and established best practices.</p>
             </div>
 
             <div class="experience-item">
@@ -100,8 +101,8 @@
                 <h3 class="role-title">Game Developer</h3>
                 <p class="company-name">Hashcube (Bangalore)</p>
                 <span class="date">Apr 2017 - Feb 2019</span>
-                <p>Implemented features for Mahjong and Facebook Instant Games. Enhanced quest frameworks and automated
-                    sales tools.</p>
+                <p>Implemented features for <b>Mahjong Quest</b> and <b>Sudoku Quest</b>. Developed powerups, managed
+                    sales configurations, and performed server-side configuration for millions of active users.</p>
             </div>
             <div class="experience-item">
                 <h3 class="role-title">Software Developer</h3>
@@ -116,6 +117,49 @@
         <section id="professional-projects">
             <h2>Professional Projects</h2>
             <div class="projects-grid">
+                <!-- Terra Tools -->
+                <article class="project-card">
+                    <div class="project-image"
+                        style="display: flex; align-items: center; justify-content: center; background: #eee; font-family: var(--font-heading); font-size: 1.5rem; text-align: center;">
+                        Terra Editor Tools</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Terra Tools</h3>
+                        <p class="project-desc">Custom Unity editor tools and hot content update systems to streamline
+                            development workflows.</p>
+                    </div>
+                </article>
+
+                <!-- Cricket Gangsta -->
+                <article class="project-card">
+                    <img src="cricket_gangsta.png" alt="Cricket Gangsta" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Cricket Gangsta</h3>
+                        <p class="project-desc">Led gameplay features and optimization, improving player retention by
+                            25%.</p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.creativemonkeygames.cricketgangsta"
+                                target="_blank">Play Store</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Sparrow Interactive -->
+                <article class="project-card">
+                    <div class="slider-container" id="sparrow-slider">
+                        <div class="slides">
+                            <img src="darklin_wars.png" alt="Darklin Wars" class="slide active">
+                            <img src="bug_frenzy.jpg" alt="Bug Frenzy" class="slide">
+                        </div>
+                        <button class="slider-btn prev" onclick="changeSlide('sparrow-slider', -1)">&#10094;</button>
+                        <button class="slider-btn next" onclick="changeSlide('sparrow-slider', 1)">&#10095;</button>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Darklin Wars & Bug Frenzy</h3>
+                        <p class="project-desc">Led the development of core gameplay systems, UI architecture, and
+                            networking for these titles at Sparrow Interactive.</p>
+                    </div>
+                </article>
+
                 <!-- Maskgun & Indus -->
                 <article class="project-card">
                     <div class="slider-container" id="maskgun-indus-slider">
@@ -141,29 +185,26 @@
                     </div>
                 </article>
 
-                <!-- Cricket Gangsta -->
+                <!-- Hashcube Quest Games -->
                 <article class="project-card">
-                    <img src="cricket_gangsta.png" alt="Cricket Gangsta" class="project-image">
-                    <div class="project-content">
-                        <h3 class="project-title">Cricket Gangsta</h3>
-                        <p class="project-desc">Led gameplay features and optimization, improving player retention by
-                            25%.</p>
-                        <div class="project-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.creativemonkeygames.cricketgangsta"
-                                target="_blank">Play Store</a>
+                    <div class="slider-container" id="hashcube-slider">
+                        <div class="slides">
+                            <img src="sudoku.png" alt="sudoku" class="slide active">
+                            <img src="mahjong.png" alt="mahjong" class="slide">
                         </div>
+                        <button class="slider-btn prev" onclick="changeSlide('hashcube-slider', -1)">&#10094;</button>
+                        <button class="slider-btn next" onclick="changeSlide('hashcube-slider', 1)">&#10095;</button>
                     </div>
-                </article>
-
-                <!-- Terra Tools -->
-                <article class="project-card">
-                    <div class="project-image"
-                        style="display: flex; align-items: center; justify-content: center; background: #eee; font-family: var(--font-heading);">
-                        Unity Tools</div>
                     <div class="project-content">
-                        <h3 class="project-title">Terra Editor Tools</h3>
-                        <p class="project-desc">Custom Unity editor tools and hot content update systems to streamline
-                            development workflows.</p>
+                        <h3 class="project-title">Mahjong & Sudoku Quest</h3>
+                        <p class="project-desc">Implemented core gameplay features, powerups, and sales systems.
+                            Optimized server configurations for HashCube's flagship titles.</p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.hashcube.mahjongfree&hl=en_IN"
+                                target="_blank">Mahjong</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.hashcube.sudokuquest&hl=en_IN"
+                                target="_blank">Sudoku</a>
+                        </div>
                     </div>
                 </article>
             </div>
